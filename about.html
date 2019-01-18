@@ -1,0 +1,359 @@
+<html>
+<head>
+</head>
+<style>
+body{background-image:url("Background.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-attachment: fixed;
+opacity: 1.5;
+}
+.header{
+       background: black;
+	   height:12%;
+	   width: 100%;
+	   color: white;
+	   text-align: center;
+	  }
+
+/*full screen nav bar*/
+	body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align:left;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right:35px;
+  }
+}
+
+
+/*for top navigation bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*for search bar*/
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+    width: 50%;
+}
+
+/*for center main division box*/
+.center {
+    margin:20px 220px;
+    width: 65%;
+    border: 0px ;
+    padding: 10px;
+    background-color:#333333;
+}
+
+footer {
+    padding: 3em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+/*spec table*/
+table, th, td {
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 7px;
+    text-align: left;
+}
+table#t01 {
+    width: 70%;
+    background-color: black;
+}
+
+
+/*color button*/
+.button {
+    background-color: blue; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 370px;
+    cursor: pointer;
+}
+.button {
+    background-color:#333333;
+    color: white;
+    border: 2px solid ;
+}
+</style>
+<title>About us</title>
+<body>
+
+  <div class="header">
+     <center><h1 align="center" id="c4"><i>HALL OF GAMES</i></center><br>
+  </div>
+
+  <ul>
+    <li><a href="Mainpage.html">Home</a></li>
+
+
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Action</a>
+            <div class="dropdown-content">
+             <a href="halflife.html">Half Life 2</a>
+             <a href="farcry.html">Far Cry Primal</a>
+            </div>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Shooting</a>
+            <div class="dropdown-content">
+              <a href="cs.html">Counter Strike:Global Offensive</a>
+              <a href="battle.html">Battlefield 4</a>
+            </div>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Sports</a>
+                  <div class="dropdown-content">
+                    <a href="nba.html">NBA 2K17</a>
+                    <a href="fifa17.html">FIFA 2017</a>
+                  </div>
+                  <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Racing</a>
+                        <div class="dropdown-content">
+                          <a href="nfs.html">NFS:Payback</a>
+                          <a href="road.html">Road Redemption</a>
+                        </div>
+                        <li class="dropdown">
+                          <a href="javascript:void(0)" class="dropbtn">Fighting</a>
+                              <div class="dropdown-content">
+                                <a href="mortal.html">Mortal Combat X</a>
+                                <a href="tekken.html">Tekken 7</a>
+                              </div>
+                              <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">Stategy</a>
+                                    <div class="dropdown-content">
+                                      <a href="resident.html">Resident Evil 7:Biohazard</a>
+                                      <a href="outlast.html">Outlast</a>
+                                    </div>
+                                    <li class="dropdown">
+                                      <a href="javascript:void(0)" class="dropbtn">FPS</a>
+                                          <div class="dropdown-content">
+                                            <a href="blackops.html">COD:Black-Ops</a>
+                                            <a href="doom.html">Doom</a>
+                                          </div>
+                                          <li class="dropdown">
+                                            <a href="javascript:void(0)" class="dropbtn">WWE</a>
+                                                <div class="dropdown-content">
+                                                  <a href="wwe.html">WWE 2K17</a>
+                                                  <a href="pain.html">Smackdown Pain</a>
+                                                </div>
+                                                <li class="dropdown">
+                                                  <a href="javascript:void(0)" class="dropbtn">Rockstar</a>
+                                                      <div class="dropdown-content">
+                                                        <a href="Gta-v.html">GTA-V</a>
+                                                        <a href="san.html">GTA-San Andreas</a>
+                                                      </div>
+
+      </div>
+   </li>
+      <li><a href="top games.html"><b>Top Games</b></a></li>
+
+      <li><a href="contact.html"><b>Contact</b></a></li>
+        <li><a href="about.html"><b>About</b></a></li>
+      <li style="float:right"><a class="" href="register.html">Register</a></li>
+      <li style="float:right"><a class="" href="Login.html">Login</a></li>
+
+  </form></li>
+  </ul>
+  </div>
+  <br>
+
+
+
+<div class="center">
+<center><h1 style="color:brown";><i><u>HALL OF GAMES</u></i></h1></center>
+<h4 style="color:white";>About Us</h4>
+<p style="color:white";><font size="2">
+  <font size="3"><b>News</b></font><br>
+  Here at Hall of Games  we are a professional team of game and hardware journalists, dedicated to bringing you the latest and
+  greatest news from the video gaming and hardware industry. Every day we provide a tonne of unique content for your reading
+  pleasure, that we have either got from the horse’s mouth (the horse often being the hardworking devs behind the games we love)
+  or we have prised from the suits’ briefcases when they haven’t been looking.<br><br>
+  Our team of expert writers is hand-selected for their knowledge of the gaming world, with a passion for news and all things related
+  to the games they report on. Their task is to help you, our dear readers, by providing unbiased insight into the games industry that
+  will let you make informed decisions and grow your own knowledge of the most important developments in console and PC gaming.<br><br>
+
+  Since we launched in 2017, we’ve made it our goal to cover as many games and formats as humanly possible, while still being capable
+   of turning out the quality articles and content you rightly expect from a professional business like ours.<br>
+- Hall of Games.<br>
+
+<font size="3"><b>Games</b></font><br>
+We live in a wonderful time. Being limited to second hand adventure through characters in books and films is a thing of the past.
+Now we are the heroes. There are new voyages to experience, guilds to form and stories to be made – and there are millions of new friends out
+ there to take the journey with us.Now we are the heroes. There are new voyages to experience, guilds to form and stories to be made – and
+ there are millions of new friends out there to take the journey with us.<br><br>
+
+ Gone are the days where gaming is a niche market.<br>.
+ From lowly beginnings the gaming world has grown to mass market appeal, with global sales and an inclusive audience. There
+ really is something for everyone out there, regardless of age, gender or culture. The line between the movies and games is blurring
+ too, as budgets increase and top-flight actors are appearing ever more frequently in games. Other entertainment mediums will have a
+ tough job keeping up.<br><br>
+
+ <font size="3"><b>Your Rig</b></font><br>
+The games continue to pour in, the only problem is deciding what to play next. All PCs are not created equal, and there's nothing like
+ the frustration of getting a much anticipated game back to Your Rig only to find that despite meeting requirements it still plays like porridge.<br><br>
+
+As Hall of Games steps onto the worldwide stage it will evolve into a user-controlled network. Take a look at the Gamer Profile page. As new tools are released
+ you can pick and choose what is really important to you, allowing a personalised approach to what you're exposed to. Because the only person who knows what
+  you really want to play is YOU.<br><br>
+
+  You know what your current system is like under pressure, what genres you like in the gaming world, what new hardware upgrades you can afford to buy, and
+  what really gets you going. Game-Debate takes this information and gives you only what you want to see. Love RTS but hate MMO?Hall of Games will feed your craving.
+   Enjoy a particular series but not sure if the new sequel will run on last year's PC? We'll fill in the blanks for you. Your Gamer Profile will become your
+  'home page' for all the news, reviews, support and details that you identify as important.<br><br>
+
+<font size="3"><b>Hall of Games</b></font><br>
+And that is only the beginning. By tweaking your Gamer Profile you will become a source of the gaming network. The more you put into it, the more you and the rest of us get out of it. You can write reviews, tag your favourite fan sites, list your current favourite games, give them your own score or identify the best places to get the latest gossip. All of this will be filtered throughout our Gamer Brethren to those that want to hear it. The more you shout, the more the gaming world will listen. We could say that Game-Debate is 'a system built by gamers for gamers'. But that'd be a cheesy cliché…</font></p>
+
+</div>
+
+  <footer>
+    <table id="t01" align="center">
+    <tr>
+
+      <th style="color:white";><u>Hall of games</u></th>
+      <th style="color:white";><u>Legal</u></th>
+      <th style="color:white";><u>Contact US</u></th>
+      <th style="color:white";><u>Social Media</u></th>
+
+    </tr>
+    <tr>
+      <td style="color:white";>Site Map</td>
+      <td style="color:white";>Disclaimer</td>
+      <td style="color:white";>Editorial Staff</td>
+      <td style="color:white";>Facebook</td>
+    </tr>
+    <tr>
+      <td><a href="register.html"><spanstyle="color:white">Sign Up</span></a></td>
+      <td style="color:white";>Refunds</td>
+      <td style="color:white";>Contact Us</td>
+      <td style="color:white";>Twitter</td>
+    </tr>
+    <tr>
+      <td style="color:white";>About</td>
+      <td style="color:white";>Privacy</td>
+      <td style="color:white";>Advertise</td>
+      <td style="color:white";>Google +</td>
+    </tr>
+  </table>
+  <br><br>
+  Copyright ©HallofGames.com
+  </footer>
+</body>
+<html>

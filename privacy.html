@@ -1,0 +1,344 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<style>
+body{background-image:url("Background.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-attachment: fixed;
+opacity: 1.5;
+}
+.header{
+       background: black;
+	   height:12%;
+	   width: 100%;
+	   color: white;
+	   text-align: center;
+	  }
+
+/*full screen nav bar*/
+	body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align:left;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right:35px;
+  }
+}
+
+
+/*for top navigation bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*for search bar*/
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+    width: 50%;
+}
+
+/*for center main division box*/
+.center {
+    margin:20px 220px;
+    width: 65%;
+    border: 0px ;
+    padding: 10px;
+    background-color:#333333;
+}
+
+footer {
+    padding: 3em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+/*spec table*/
+table, th, td {
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 7px;
+    text-align: left;
+}
+table#t01 {
+    width: 70%;
+    background-color: black;
+}
+
+
+/*color button*/
+.button {
+    background-color: blue; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 370px;
+    cursor: pointer;
+}
+.button {
+    background-color:#333333;
+    color: white;
+    border: 2px solid ;
+}
+</style>
+<title>Privacy</title>
+<body>
+
+  <div class="header">
+     <center><h1 align="center" id="c4"><i>HALL OF GAMES</i></center><br>
+  </div>
+
+  <ul>
+    <li><a href="Mainpage.html">Home</a></li>
+
+
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Action</a>
+            <div class="dropdown-content">
+             <a href="halflife.html">Half Life 2</a>
+             <a href="farcry.html">Far Cry Primal</a>
+            </div>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Shooting</a>
+            <div class="dropdown-content">
+              <a href="cs.html">Counter Strike:Global Offensive</a>
+              <a href="battle.html">Battlefield 4</a>
+            </div>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Sports</a>
+                  <div class="dropdown-content">
+                    <a href="nba.html">NBA 2K17</a>
+                    <a href="fifa17.html">FIFA 2017</a>
+                  </div>
+                  <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Racing</a>
+                        <div class="dropdown-content">
+                          <a href="nfs.html">NFS:Payback</a>
+                          <a href="road.html">Road Redemption</a>
+                        </div>
+                        <li class="dropdown">
+                          <a href="javascript:void(0)" class="dropbtn">Fighting</a>
+                              <div class="dropdown-content">
+                                <a href="mortal.html">Mortal Combat X</a>
+                                <a href="tekken.html">Tekken 7</a>
+                              </div>
+                              <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">Stategy</a>
+                                    <div class="dropdown-content">
+                                      <a href="resident.html">Resident Evil 7:Biohazard</a>
+                                      <a href="outlast.html">Outlast</a>
+                                    </div>
+                                    <li class="dropdown">
+                                      <a href="javascript:void(0)" class="dropbtn">FPS</a>
+                                          <div class="dropdown-content">
+                                            <a href="blackops.html">COD:Black-Ops</a>
+                                            <a href="doom.html">Doom</a>
+                                          </div>
+                                          <li class="dropdown">
+                                            <a href="javascript:void(0)" class="dropbtn">WWE</a>
+                                                <div class="dropdown-content">
+                                                  <a href="wwe.html">WWE 2K17</a>
+                                                  <a href="pain.html">Smackdown Pain</a>
+                                                </div>
+                                                <li class="dropdown">
+                                                  <a href="javascript:void(0)" class="dropbtn">Rockstar</a>
+                                                      <div class="dropdown-content">
+                                                        <a href="Gta-v.html">GTA-V</a>
+                                                        <a href="san.html">GTA-San Andreas</a>
+                                                      </div>
+
+      </div>
+   </li>
+      <li><a href="top games.html"><b>Top Games</b></a></li>
+
+      <li><a href="contact.html"><b>Contact</b></a></li>
+        <li><a href="about.html"><b>About</b></a></li>
+      <li style="float:right"><a class="" href="register.html">Register</a></li>
+      <li style="float:right"><a class="" href="Login.html">Login</a></li>
+  </form></li>
+  </ul>
+  </div>
+  <br>
+
+  
+
+<div class="center">
+<center><h1 style="color:brown";><i><u>HALL OF GAMES</u></i></h1></center>
+<h4 style="color:white";>Privacy Statement</h4>
+<p style="color:white";><font size="2">
+  <font size="3"><b>Information that is gathered from visitors</b></font><br>
+  In common with other websites, log files are stored on the web server saving details such as the visitor's IP address,
+   browser type, referring page and time of visit. Cookies may be used to remember visitor preferences when interacting
+   with the website. Where registration is required, the visitor's email and a username will be stored on the server.<br><br>
+
+<font size="3"><b>How the Information is used</b></font><br>
+The information is used to enhance the vistor's experience when using the website to display personalised content and possibly
+advertising. E-mail addresses will not be sold, rented or leased to 3rd parties. E-mail may be sent to inform you of news of our
+ services or offers by us or our affiliates.<br><br>
+
+ <font size="3"><b>Visitor Options</b></font><br>
+ You may be able to block cookies via your browser settings but this may prevent you from access to certain features of the website.<br><br>
+
+<font size="3"><b>Cookies</b></font><br>
+Cookies are small digital signature files that are stored by your web browser that allow your preferences to be recorded when
+visiting the website. Also they may be used to track your return visits to the website. 3rd party advertising companies may also use cookies for tracking purposes.<br>
+
+<font size="3"><b>Google Ads</b></font><br>
+Google, as a third party vendor, uses cookies to serve ads. Google's use of the DART cookie enables it to serve ads to visitors based on their visit to sites they visit
+ on the Internet. Website visitors may opt out of the use of the DART cookie by visiting the Google ad and content network privacy policy.<br><br>
+
+ <button class="button">
+   <a href="Mainpage.html"><Span style="color:grey">Go to home Page<span></button>
+
+</div>
+
+  <footer>
+    <table id="t01" align="center">
+    <tr>
+
+      <th style="color:white";><u>Hall of games</u></th>
+      <th style="color:white";><u>Legal</u></th>
+      <th style="color:white";><u>Contact US</u></th>
+      <th style="color:white";><u>Social Media</u></th>
+
+    </tr>
+    <tr>
+      <td style="color:white";>Site Map</td>
+      <td style="color:white";>Disclaimer</td>
+      <td style="color:white";>Editorial Staff</td>
+      <td style="color:white";>Facebook</td>
+    </tr>
+    <tr>
+      <td ><a href="register.html"><spanstyle="color:white">Sign Up</span></a></td>
+      <td style="color:white";>Refunds</td>
+      <td style="color:white";>Contact Us</td>
+      <td style="color:white";>Twitter</td>
+    </tr>
+    <tr>
+      <td style="color:white";>About</td>
+      <td style="color:white";>Privacy</td>
+      <td style="color:white";>Advertise</td>
+      <td style="color:white";>Google +</td>
+    </tr>
+  </table>
+  <br><br>
+  Copyright ©HallofGames.com
+  </footer>
+</body>
+<html>

@@ -1,0 +1,417 @@
+<html>
+<head>
+</head>
+<style>
+body{background-image:url("Background.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-attachment: fixed;
+opacity: 1.5;
+}
+.header{
+       background: black;
+       margin:0;
+	   height:1%;
+	   width: 92.6%;
+	   color: white;
+	   text-align: center;
+	  }
+
+/*full screen nav bar*/
+	/*body {
+    margin: ;
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align:left;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right:35px;
+  }
+}*/
+
+
+/*for top navigation bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 14px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*for search bar*/
+input[type=text] {
+    width: 170px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+    width: 50%;
+}
+
+/*for center main division box*/
+.center {
+    margin:20px 220px;
+    width: 65%;
+    height:100%;
+    border: 0px ;
+    padding: 10px;
+    background-color:black;
+}
+
+div {
+    margin:0px 0px;
+    width: 7%;
+    height:5%;
+    border: 0px ;
+    padding: 60px;
+    background-color: #333333;
+}
+
+footer {
+    padding: 3em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+/*spec table*/
+table, th, td {
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 7px;
+    text-align: left;
+}
+table#t01 {
+    width: 70%;
+    background-color: black;
+}
+
+
+/*color button*/
+.button {
+    background-color: blue; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 20px;
+    cursor: pointer;
+}
+.button {
+    background-color: #333333;
+    color: white;
+    border: 2px solid ;
+}
+</style>
+<title>Register</title>
+<body>
+
+  <div class="header">
+     <center><h1 align="center" id="c4"><i>HALL OF GAMES</i></center><br>
+  </div>
+
+  <ul>
+    <li><a href="Mainpage.html">Home</a></li>
+
+
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Action</a>
+            <div class="dropdown-content">
+             <a href="halflife.html">Half Life 2</a>
+             <a href="farcry.html">Far Cry Primal</a>
+            </div>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Shooting</a>
+            <div class="dropdown-content">
+              <a href="cs.html">Counter Strike:Global Offensive</a>
+              <a href="battle.html">Battlefield 4</a>
+            </div>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Sports</a>
+                  <div class="dropdown-content">
+                    <a href="nba.html">NBA 2K17</a>
+                    <a href="fifa17.html">FIFA 2017</a>
+                  </div>
+                  <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Racing</a>
+                        <div class="dropdown-content">
+                          <a href="nfs.html">NFS:Payback</a>
+                          <a href="road.html">Road Redemption</a>
+                        </div>
+                        <li class="dropdown">
+                          <a href="javascript:void(0)" class="dropbtn">Fighting</a>
+                              <div class="dropdown-content">
+                                <a href="mortal.html">Mortal Combat X</a>
+                                <a href="tekken.html">Tekken 7</a>
+                              </div>
+                              <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">Stategy</a>
+                                    <div class="dropdown-content">
+                                      <a href="resident.html">Resident Evil 7:Biohazard</a>
+                                      <a href="outlast.html">Outlast</a>
+                                    </div>
+                                    <li class="dropdown">
+                                      <a href="javascript:void(0)" class="dropbtn">FPS</a>
+                                          <div class="dropdown-content">
+                                            <a href="blackops.html">COD:Black-Ops</a>
+                                            <a href="doom.html">Doom</a>
+                                          </div>
+                                          <li class="dropdown">
+                                            <a href="javascript:void(0)" class="dropbtn">WWE</a>
+                                                <div class="dropdown-content">
+                                                  <a href="wwe.html">WWE 2K17</a>
+                                                  <a href="pain.html">Smackdown Pain</a>
+                                                </div>
+                                                <li class="dropdown">
+                                                  <a href="javascript:void(0)" class="dropbtn">Rockstar</a>
+                                                      <div class="dropdown-content">
+                                                        <a href="Gta-v.html">GTA-V</a>
+                                                        <a href="san.html">GTA-San Andreas</a>
+                                                      </div>
+
+      </div>
+   </li>
+      <li><a href="top games.html"><b>Top Games</b></a></li>
+
+      <li><a href="contact.html"><b>Contact</b></a></li>
+        <li><a href="about.html"><b>About</b></a></li>
+      <li style="float:right"><a class="" href="register.html">Register</a></li>
+      <li style="float:right"><a class="" href="Login.html">Login</a></li>
+
+  </form></li>
+  </ul>
+  </div>
+  <br>
+
+
+<div class="center">
+  <br><br>
+<h3 style="color:white">Become a Member for FPS predictions<h3>
+<br><br><br>
+<form action= "cheats.html"  method="POST">
+  <p style="color:white";>Public Id<br><input type="Text" name="Id" required><br><br><br>
+   Password<br><input type="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"    title="Must
+   contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br><br>
+   Confirm Password<br><input type="password" name="psw" required><br><br>
+
+
+   Country of Reisdence:<br>
+   <select name="dropdown">
+   <option vaue="Subject" selected>India</option>
+   <option vaue="Subject">Afghanistan</option>
+   <option vaue="Subject">Albania</option>
+   <option vaue="Subject">Algeria</option>
+   <option vaue="Subject">Argentina</option>
+   <option vaue="Subject">Australlia</option>
+   <option vaue="Subject">Bahamas</option>
+   <option vaue="Subject">Bangladesh</option>
+   <option vaue="Subject">Belgium</option>
+   <option vaue="Subject">Brazil</option>
+   <option vaue="Subject">Indonesia</option>
+   <option vaue="Subject">Iraq</option>
+   <option vaue="Subject">Italy</option>
+   <option vaue="Subject">Japan</option>
+   <option vaue="Subject">Jersey</option>
+   <option vaue="Subject">Jordan</option>
+   <option vaue="Subject">Kuwait</option>
+ </select><br><br>
+ <input type="checkbox" name="read" required><font size="3">I have read and accept HoG Privacy and
+  Cookie Policy and User Agreement</font><br><br>
+ </form>
+<button class="button button1" input type="submit" value="login" onclick="myFunction()">Signup</button>
+
+<script>
+function myFunction() {
+    alert("You registered successfully!Now,you are a member of HoG community.");
+}
+</script>
+
+<script>
+var myInput = document.getElementById("psw");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+
+  // Validate length
+  if(myInput.value.length >= 8) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+}
+ </script>
+</div>
+
+
+
+
+  <footer>
+    <table id="t01" align="center">
+    <tr>
+
+      <th style="color:white";><u>Hall of games</u></th>
+      <th style="color:white";><u>Legal</u></th>
+      <th style="color:white";><u>Contact US</u></th>
+      <th style="color:white";><u>Social Media</u></th>
+
+    </tr>
+    <tr>
+      <td style="color:white";>Site Map</td>
+      <td style="color:white";>Disclaimer</td>
+      <td style="color:white";>Editorial Staff</td>
+      <td style="color:white";>Facebook</td>
+    </tr>
+    <tr>
+      <td style="color:white";>Sign Up</td>
+      <td style="color:white";>Refunds</td>
+      <td style="color:white";>Contact Us</td>
+      <td style="color:white";>Twitter</td>
+    </tr>
+    <tr>
+      <td style="color:white";>About</td>
+      <td style="color:white";>Privacy</td>
+      <td style="color:white";>Advertise</td>
+      <td style="color:white";>Google +</td>
+    </tr>
+  </table>
+  <br><br>
+  Copyright ©HallofGames.com
+  </footer>
+</body>
+<html>

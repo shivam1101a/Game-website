@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>Top Games</title>
+<link rel="stylesheet" type="text/css" href="commoncss.css">
+<style>
+/*spec table*/
+table, th, td {
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 7px;
+    text-align: left;
+}
+table#t01 {
+    width: 70%;
+    background-color: black;
+}
+</style>
+</head>
+<body>
+  <div class="header">
+     <center><h1 align="center" id="c4"><i>HALL OF GAMES</i></center><br>
+  </div>
+
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Categories</a>
+      <div class="dropdown-content">
+        <a href="#">Arcade</a>
+        <a href="#">Shooting</a>
+        <a href="#">Sports</a>
+      <a href="#">Action</a>
+      <a href="#">Racing</a>
+      <a href="#">Fighting</a>
+      <a href="#">Stategy</a>
+      <a href="#">Fps</a>
+      <a href="#">Wwe</a>
+      </div>
+   </li>
+      <li><a href="top games.html"><b>Top Games</b></a></li>
+        <li><a href="cheats.html"><b>Cheats</b></a></li>
+      <li><a href="contact.html"><b>Contact</b></a></li>
+        <li><a href="about.html"><b>About</b></a></li>
+      <li style="float:right"><a class="" href="#register">Register</a></li>
+      <li style="float:right"><a class="" href="#about">Login</a></li>
+      <li style="float:right"><form><input type="text" name="search" placeholder="Search..">
+  </form></li>
+  </ul>
+  </div>
+  <br>
+
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+      <a href="#">My Account</a>
+    <a href="#">Help</a>
+    </div>
+  </div>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+  <script>
+  function openNav() {
+      document.getElementById("myNav").style.width = "20%";
+  }
+
+  function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+  }
+  </script>
+
+
+
+
+  <footer>
+    <table id="t01" align="center">
+    <tr>
+
+      <th style="color:white";><u>Hall of games</u></th>
+      <th style="color:white";><u>Legal</u></th>
+      <th style="color:white";><u>Contact US</u></th>
+      <th style="color:white";><u>Social Media</u></th>
+
+    </tr>
+    <tr>
+      <td style="color:white";>Site Map</td>
+      <td style="color:white";>Disclaimer</td>
+      <td style="color:white";>Editorial Staff</td>
+      <td style="color:white";>Facebook</td>
+    </tr>
+    <tr>
+      <td style="color:white";>Sign Up</td>
+      <td style="color:white";>Refunds</td>
+      <td style="color:white";>Contact Us</td>
+      <td style="color:white";>Twitter</td>
+    </tr>
+    <tr>
+      <td style="color:white";>About</td>
+      <td style="color:white";>Privacy</td>
+      <td style="color:white";>Advertise</td>
+      <td style="color:white";>Google +</td>
+    </tr>
+  </table>
+  <br><br>
+  Copyright ©HALLOFGAMES.COM
+  </footer>
+
+</body>
+</html>

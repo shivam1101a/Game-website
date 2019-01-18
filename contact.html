@@ -1,0 +1,384 @@
+<html>
+<head>
+</head>
+<style>
+body{background-image:url("Background.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-attachment: fixed;
+opacity: 1.5;
+}
+.header{
+       background: black;
+	   height:12%;
+	   width: 100%;
+	   color: white;
+	   text-align: center;
+	  }
+
+/*full screen nav bar*/
+	body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 5%;
+    width: 100%;
+    text-align:left;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    font-size: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right:35px;
+  }
+}
+
+
+/*for top navigation bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*for search bar*/
+input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+    width: 50%;
+}
+
+/*for center main division box*/
+.center {
+    margin:20px 220px;
+    width: 65%;
+    border: 0px ;
+    padding: 10px;
+    background-color:#333333;
+}
+
+footer {
+    padding: 3em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+/*spec table*/
+table, th, td {
+    border: 5px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 7px;
+    text-align: left;
+}
+table#t01 {
+    width: 70%;
+    background-color: black;
+}
+
+/*color button*/
+.button {
+    background-color: grey; /* Green */
+    border: none;
+    color: grey;
+    padding: 1px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 700px;
+    cursor: pointer;
+}
+.button {
+    background-color:#333333;
+    color:#CCCCFF;
+    border: 1px solid ;
+}
+</style>
+<title>About us</title>
+<body>
+
+  <div class="header">
+     <center><h1 align="center" id="c4"><i>HALL OF GAMES</i></center><br>
+  </div>
+
+  <ul>
+    <li><a href="Mainpage.html">Home</a></li>
+
+
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Action</a>
+            <div class="dropdown-content">
+             <a href="halflife.html">Half Life 2</a>
+             <a href="farcry.html">Far Cry Primal</a>
+            </div>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Shooting</a>
+            <div class="dropdown-content">
+              <a href="cs.html">Counter Strike:Global Offensive</a>
+              <a href="battle.html">Battlefield 4</a>
+            </div>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Sports</a>
+                  <div class="dropdown-content">
+                    <a href="nba.html">NBA 2K17</a>
+                    <a href="fifa17.html">FIFA 2017</a>
+                  </div>
+                  <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Racing</a>
+                        <div class="dropdown-content">
+                          <a href="nfs.html">NFS:Payback</a>
+                          <a href="road.html">Road Redemption</a>
+                        </div>
+                        <li class="dropdown">
+                          <a href="javascript:void(0)" class="dropbtn">Fighting</a>
+                              <div class="dropdown-content">
+                                <a href="mortal.html">Mortal Combat X</a>
+                                <a href="tekken.html">Tekken 7</a>
+                              </div>
+                              <li class="dropdown">
+                                <a href="javascript:void(0)" class="dropbtn">Stategy</a>
+                                    <div class="dropdown-content">
+                                      <a href="resident.html">Resident Evil 7:Biohazard</a>
+                                      <a href="outlast.html">Outlast</a>
+                                    </div>
+                                    <li class="dropdown">
+                                      <a href="javascript:void(0)" class="dropbtn">FPS</a>
+                                          <div class="dropdown-content">
+                                            <a href="blackops.html">COD:Black-Ops</a>
+                                            <a href="doom.html">Doom</a>
+                                          </div>
+                                          <li class="dropdown">
+                                            <a href="javascript:void(0)" class="dropbtn">WWE</a>
+                                                <div class="dropdown-content">
+                                                  <a href="wwe.html">WWE 2K17</a>
+                                                  <a href="pain.html">Smackdown Pain</a>
+                                                </div>
+                                                <li class="dropdown">
+                                                  <a href="javascript:void(0)" class="dropbtn">Rockstar</a>
+                                                      <div class="dropdown-content">
+                                                        <a href="Gta-v.html">GTA-V</a>
+                                                        <a href="san.html">GTA-San Andreas</a>
+                                                      </div>
+
+      </div>
+   </li>
+      <li><a href="top games.html"><b>Top Games</b></a></li>
+
+      <li><a href="contact.html"><b>Contact</b></a></li>
+        <li><a href="about.html"><b>About</b></a></li>
+      <li style="float:right"><a class="" href="register.html">Register</a></li>
+      <li style="float:right"><a class="" href="Login.html">Login</a></li>
+
+  </form></li>
+  </ul>
+  </div>
+  <br>
+
+
+
+<div class="center">
+<center><h1 style="color:brown";><i><u>HALL OF GAMES</u></i></h1></center>
+<h2 style="color:white";><u>Contact Us</u></h2>
+<p style="color:white";><font size="2">
+  You can contact us for suggestions. We Welcome your feedback. This will help us to improve User Experience. You can share ideas how
+  we can improve website. If you find any errors in article, you can also notify us.<br>
+  We’ll read every feedback from you guyz and will try to answer most of these. You can also report dead or broken links of any downloads.</font><br><br><br>
+
+  <h4 style="color:white";>Contact Form</h4>
+  <form name='registration' onSubmit="return formValidation();">
+
+  <input type="text" name="username" placeholder="Name" required>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <input type="text" name="email"  placeholder="Email" required>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  <br><br><br>
+  <select name="dropdown">
+  <option vaue="Subject" selected>Subject</option>
+  <option vaue="Subject">Interes in hiring our web tools</option>
+  <option vaue="Subject">Advertising</option>
+  <option vaue="Subject">Industry News</option>
+  <option vaue="Subject">Game Details</option>
+  <option vaue="Subject">Site Error</option>
+  <option vaue="Subject">Other</option>
+</select><br><br><br>
+
+<textarea rows="10" cols="90" name="description" placeholder="Comment">
+</textarea>
+
+<button class="button" input type="submit">
+<Span style="color:grey">Send<span></button>
+
+<script>
+function formValidation()
+{
+
+  var uname = document.registration.username;
+  {
+if(allLetter(uname))
+  }
+  function allLetter(uname)
+{
+var letters = /^[A-Za-z]+$/;
+if(uname.value.match(letters))
+{
+return true;
+}
+else
+{
+alert('Username must have alphabet characters only');
+uname.focus();
+return false;
+}
+}
+
+
+}
+
+
+</script>
+
+
+<hr>
+<h3 style="color:white";><u>Hall of Games&reg; Contact Details<u></h3>
+<p style="color:white";><font size="2">Contact Email<br>
+help-desk@hallofgames.com</font></p>
+
+</form>
+
+
+
+
+
+</div>
+
+  <footer>
+    <table id="t01" align="center">
+    <tr>
+
+      <th style="color:white";><u>Hall of games</u></th>
+      <th style="color:white";><u>Legal</u></th>
+      <th style="color:white";><u>Contact US</u></th>
+      <th style="color:white";><u>Social Media</u></th>
+
+    </tr>
+    <tr>
+      <td style="color:white";>Site Map</td>
+      <td style="color:white";>Disclaimer</td>
+      <td style="color:white";>Editorial Staff</td>
+      <td style="color:white";>Facebook</td>
+    </tr>
+    <tr>
+      <td ><a href="register.html"><spanstyle="color:white">Sign Up</span></a></td>
+      <td style="color:white";>Refunds</td>
+      <td style="color:white";>Contact Us</td>
+      <td style="color:white";>Twitter</td>
+    </tr>
+    <tr>
+      <td style="color:white";>About</td>
+      <td style="color:white";>Privacy</td>
+      <td style="color:white";>Advertise</td>
+      <td style="color:white";>Google +</td>
+    </tr>
+  </table>
+  <br><br>
+  Copyright ©HallofGames.com
+  </footer>
+</body>
+<html>
